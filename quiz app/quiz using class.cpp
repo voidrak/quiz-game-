@@ -3,6 +3,7 @@
 #include <windows.h>
 #include "biology.h"
 #include "maths.h"
+#include "chemi.h"
 int const total_question=5;
 
    int main()
@@ -38,6 +39,7 @@ int const total_question=5;
          std::cout<<"CHOOSE SUBJECT USING NUMBER"<<std::endl;
          std::cout<<" 1.BIOLOGY"<<std::endl;
          std::cout<<" 2.MATHS"<<std::endl;
+         std::cout<<" 3.CHEMISTRY"<<std::endl;
          std::cin>>subject_choice;
          switch (subject_choice)
          {
@@ -72,6 +74,23 @@ int const total_question=5;
          m4.askquestion(Score);
          m5.askquestion(Score);
          std::cout << "you got " << Score << " out of " << total_question << std::endl;}
+         break;
+         case 3:{
+             std::cout << " ****************INSTRUCTIONS!!***********\n";
+         std::cout << "USE ONLY NUMBER  1-4 TO ANSWER THE QUESTIONS\n";
+         std::cin.get();
+         ch1.setvalue("what is 2*3", "1.3", "2.6", "3.76", "4.9", 2);
+         ch2.setvalue("waht ", "1.Zooey Deschanel", "2.Kaley Cuoco", "3.Jennifer Aniston", "4.Alyson Hannigan ", 1);
+         ch3.setvalue("What is the largest canyon in the world", "1.Verdon Gorge, France", "2.King`s Canyon, Australia", "3.Grand Canyon, USA", "4.Fjaorargljufur Canyon, Iceland", 3);
+         ch4.setvalue("How long is the border between the United States and Canada", "1. 3,525 miles", "2. 4,525 miles", "3. 5,525 miles", "4. 6,525 miles", 2);
+         ch5.setvalue("What is the largest active volcano in the world", "1.Mount Etna", "2.Mount Vesuvius", "3.Mouna Loa", "4.Mount Batur", 4);
+         ch1.askquestion(Score);
+         ch2.askquestion(Score);
+         ch3.askquestion(Score);
+         ch4.askquestion(Score);
+         ch5.askquestion(Score);
+         std::cout << "you got " << Score << " out of " << total_question << std::endl;
+         }
          break;
          default:
             system("cls");
