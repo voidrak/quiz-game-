@@ -41,7 +41,7 @@ int const total_question=5;
          std::cin>>subject_choice;
          switch (subject_choice)
          {
-         case 1:
+         case 1:{
                      std::cout << " ****************INSTRUCTIONS!!***********\n";
          std::cout << "USE ONLY NUMBER  1-4 TO ANSWER THE QUESTIONS\n";
          std::cin.get();
@@ -55,9 +55,9 @@ int const total_question=5;
          q3.askquestion(Score);
          q4.askquestion(Score);
          q5.askquestion(Score);
-         std::cout << "you got " << Score << " out of " << total_question << std::endl;
+         std::cout << "you got " << Score << " out of " << total_question << std::endl;}
             break;
-         case 2:
+         case 2:{
             std::cout << " ****************INSTRUCTIONS!!***********\n";
          std::cout << "USE ONLY NUMBER  1-4 TO ANSWER THE QUESTIONS\n";
          std::cin.get();
@@ -71,7 +71,7 @@ int const total_question=5;
          m3.askquestion(Score);
          m4.askquestion(Score);
          m5.askquestion(Score);
-         std::cout << "you got " << Score << " out of " << total_question << std::endl;
+         std::cout << "you got " << Score << " out of " << total_question << std::endl;}
          break;
          default:
             system("cls");
