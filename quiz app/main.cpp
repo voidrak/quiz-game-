@@ -45,14 +45,15 @@ int const total_question=5;
          {
             // BIOLOGY
          case 1:{
-                     std::cout << " ****************INSTRUCTIONS!!***********\n";
+         std::cout << " ****************INSTRUCTIONS!!***********\n";
+         std::cout<<std::endl;
          std::cout << "USE ONLY NUMBER  1-4 TO ANSWER THE QUESTIONS\n";
          std::cin.get();
-         q1.setvalue("In which Italian city can you find the Colosseum?", "1.Venice", "2.Rome", "3.Naples", "4.Milan", 2);
-         q2.setvalue("In the TV show New Girl, which actress plays Jessica Day", "1.Zooey Deschanel", "2.Kaley Cuoco", "3.Jennifer Aniston", "4.Alyson Hannigan ", 1);
-         q3.setvalue("What is the largest canyon in the world", "1.Verdon Gorge, France", "2.King`s Canyon, Australia", "3.Grand Canyon, USA", "4.Fjaorargljufur Canyon, Iceland", 3);
-         q4.setvalue("How long is the border between the United States and Canada", "1. 3,525 miles", "2. 4,525 miles", "3. 5,525 miles", "4. 6,525 miles", 2);
-         q5.setvalue("What is the largest active volcano in the world", "1.Mount Etna", "2.Mount Vesuvius", "3.Mouna Loa", "4.Mount Batur", 4);
+         q1.setvalue("Ordinary table salt is sodium chloride. What is baking soda?", "1.Potassium chloride","2.Potassium chloride", "3.Potassium hydroxide", "4.	Sodium bicarbonate", 4);
+         q2.setvalue("Ozone hole refers to", "1.hole in ozone layer", "2.decrease in the ozone layer in troposphere", "3.decrease in thickness of ozone layer in stratosphere", "4.increase in the thickness of ozone layer in troposphere", 3);
+         q3.setvalue("Movement of cell against concentration gradient is called", "1.osmosis", "2.active transport", "3.diffusion","4.passive transport", 2);
+         q4.setvalue("Pollination is best defined as", "1.transfer of pollen from anther to stigma", "2.germination of pollen grains", "3.growth of pollen tube in ovule", "4.visiting flowers by insects", 1);
+         q5.setvalue("Plants receive their nutrients mainly from", "1.	chlorophyll", "2.atmosphere", "3light", "4.soil", 4);
          q1.askquestion(Score);
          q2.askquestion(Score);
          q3.askquestion(Score);
@@ -65,11 +66,11 @@ int const total_question=5;
             std::cout << " ****************INSTRUCTIONS!!***********\n";
          std::cout << "USE ONLY NUMBER  1-4 TO ANSWER THE QUESTIONS\n";
          std::cin.get();
-         m1.setvalue("what is 2*3", "1.3", "2.6", "3.76", "4.9", 2);
-         m2.setvalue("waht ", "1.Zooey Deschanel", "2.Kaley Cuoco", "3.Jennifer Aniston", "4.Alyson Hannigan ", 1);
-         m3.setvalue("What is the largest canyon in the world", "1.Verdon Gorge, France", "2.King`s Canyon, Australia", "3.Grand Canyon, USA", "4.Fjaorargljufur Canyon, Iceland", 3);
-         m4.setvalue("How long is the border between the United States and Canada", "1. 3,525 miles", "2. 4,525 miles", "3. 5,525 miles", "4. 6,525 miles", 2);
-         m5.setvalue("What is the largest active volcano in the world", "1.Mount Etna", "2.Mount Vesuvius", "3.Mouna Loa", "4.Mount Batur", 4);
+       m1.setvalue("Set of positive integers is known as?","Subset" ,"2.Finite", "3.Infinite", "4. None",2);
+         m2.setvalue("Which is the complement of set A? ", "1 A-B", "2.B-A", "3.A-U", "4.U-A", 4);
+         m3.setvalue("If a set contains 3 elements then the number of subsets is?", "1. 5", "2. 9", "3. 8", "4. 12", 3);
+         m4.setvalue(" How many bytes are required to encode 2000 bits of data", "1. 2", "2. 4", "3. 6", "4. 8", 2);
+         m5.setvalue(" Floor (2.4) + Ceil (2.9) is equal to", "1. 9", "2. 3", "3. 5", "4.7", 3);
          m1.askquestion(Score);
          m2.askquestion(Score);
          m3.askquestion(Score);
