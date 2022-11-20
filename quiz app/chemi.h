@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 int user_answer2;
-class math
+class chemistry
 {
 private:
    std::string questions;
