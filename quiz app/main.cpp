@@ -54,11 +54,11 @@ int const total_question=5;
          q3.setvalue("Movement of cell against concentration gradient is called", "1.osmosis", "2.active transport", "3.diffusion","4.passive transport", 2);
          q4.setvalue("Pollination is best defined as", "1.transfer of pollen from anther to stigma", "2.germination of pollen grains", "3.growth of pollen tube in ovule", "4.visiting flowers by insects", 1);
          q5.setvalue("Plants receive their nutrients mainly from", "1.	chlorophyll", "2.atmosphere", "3light", "4.soil", 4);
-         q1.askquestion(Score);
-         q2.askquestion(Score);
-         q3.askquestion(Score);
-         q4.askquestion(Score);
-         q5.askquestion(Score);
+         q1.askbiology(Score);
+         q2.askbiology(Score);
+         q3.askbiology(Score);
+         q4.askbiology(Score);
+         q5.askbiology(Score);
          std::cout << "you got " << Score << " out of " << total_question << std::endl;}
             break;
             // MATHS
@@ -66,16 +66,16 @@ int const total_question=5;
             std::cout << " ****************INSTRUCTIONS!!***********\n";
          std::cout << "USE ONLY NUMBER  1-4 TO ANSWER THE QUESTIONS\n";
          std::cin.get();
-       m1.setvalue("Set of positive integers is known as?","Subset" ,"2.Finite", "3.Infinite", "4. None",2);
+         m1.setvalue("Set of positive integers is known as?","Subset" ,"2.Finite", "3.Infinite", "4. None",2);
          m2.setvalue("Which is the complement of set A? ", "1 A-B", "2.B-A", "3.A-U", "4.U-A", 4);
          m3.setvalue("If a set contains 3 elements then the number of subsets is?", "1. 5", "2. 9", "3. 8", "4. 12", 3);
          m4.setvalue(" How many bytes are required to encode 2000 bits of data", "1. 2", "2. 4", "3. 6", "4. 8", 2);
          m5.setvalue(" Floor (2.4) + Ceil (2.9) is equal to", "1. 9", "2. 3", "3. 5", "4.7", 3);
-         m1.askquestion(Score);
-         m2.askquestion(Score);
-         m3.askquestion(Score);
-         m4.askquestion(Score);
-         m5.askquestion(Score);
+         m1.askmaths(Score);
+         m2.askmaths(Score);
+         m3.askmaths(Score);
+         m4.askmaths(Score);
+         m5.askmaths(Score);
          std::cout << "you got " << Score << " out of " << total_question << std::endl;}
          break;
          //CHEMISTRY
@@ -88,11 +88,11 @@ int const total_question=5;
          ch3.setvalue("Two atoms are isotopes if they have", "1.Different atomic numbers", "2.The same mass number, but different atomic numbers", "3.The same number of protons and neutrons", "4.The same atomic number, but a different mass number", 4);
          ch4.setvalue("The element found in the periodic table in Group 4 and Period 6 is", "1.Halfnium, Hf", "2.Selenium, Se", "3.Gadolinium, Gd", "4.Chromium, Cr", 3);
          ch5.setvalue("A metaloid in Period 3 is", "1.Scandium", "2.Silicon", "3.Germanium", "4.Aluminum", 2);
-         ch1.askquestion(Score);
-         ch2.askquestion(Score);
-         ch3.askquestion(Score);
-         ch4.askquestion(Score);
-         ch5.askquestion(Score);
+         ch1.askchemistry(Score);
+         ch2.askchemistry(Score);
+         ch3.askchemistry(Score);
+         ch4.askchemistry(Score);
+         ch5.askchemistry(Score);
          std::cout << "you got " << Score << " out of " << total_question << std::endl;
          }
          break;

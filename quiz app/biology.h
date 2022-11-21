@@ -25,7 +25,7 @@ public:
       choice_4 = c4;
       correct_answer = ca;
    }
-   void askquestion(int &score)
+   void askbiology(int &score)
    { // by  reference the score
       std::cout << questions << std::endl;
       std::cout << choice_1 << std::endl;
